@@ -1,6 +1,7 @@
 package com.example.flood_manager.repository;
 
 import com.example.flood_manager.domain.entity.User;
+import com.example.flood_manager.domain.response.UserResponse;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
