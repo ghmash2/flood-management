@@ -18,7 +18,12 @@ public class UserController {
     private final UserService userService;
     @PostMapping("/create/register")
     public User processRegister(@RequestBody UserResponse userResponse) {
-         userService.createUser(userResponse);
+        return userService.createUser(userResponse);
+    }
+
+    @PostMapping("/create/login")
+    public User processLogin(@RequestBody UserResponse userResponse){
+        return userService.createLogin(userResponse);
     }
 
     @GetMapping("/get/users")

@@ -22,6 +22,11 @@ public class UserService {
         return response;
     }
 
+    public User createLogin(UserResponse userResponse)
+    {
+           return new User();
+    }
+
     public List<User> getAllVolunteers()
     {
         List<User> users = userRepository.findUsers("volunteer");
